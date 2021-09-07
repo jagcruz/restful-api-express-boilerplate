@@ -16,7 +16,7 @@ const logger = require("./config/logger");
 const session = require("./config/session");
 const { jwtStrategy } = require("./config/passport");
 const { error } = require("./middlewares");
-// const routes = require("./routes");
+const routes = require("./routes");
 // #endregion
 
 /**
@@ -61,7 +61,7 @@ app.use(
 );
 
 // parse urlencoded request body
-app.use(express.urlencoded({ limit: "1mb" }));
+app.use(express.urlencoded({ extended: false, limit: "1mb" }));
 // #endregion
 
 // sanitize request data
@@ -93,7 +93,7 @@ app.use(
 );
 
 // API routes
-// app.use("/", routes);
+app.use("/", routes);
 
 // #region Errors
 // Catch 404 and forward to error handler

@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "afb7dd69-fb2a-48ac-81f4-8fe5beb5caa8",
+		"name": "RESTful API Express boilerplate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST /users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Brannon\",\n    \"lastName\": \"Toy\",\n    \"email\": \"Josianne_Denesik@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/8106ffa5-f936-4ac8-b67d-2d13b5d46e53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"8106ffa5-f936-4ac8-b67d-2d13b5d46e53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Brannon\",\n    \"lastName\": \"Toy\",\n    \"email\": \"Josianne_Denesik@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/8106ffa5-f936-4ac8-b67d-2d13b5d46e53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"8106ffa5-f936-4ac8-b67d-2d13b5d46e53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH /users",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Brannon\",\n    \"lastName\": \"Toy\",\n    \"email\": \"Josianne_Denesik@yahoo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/8106ffa5-f936-4ac8-b67d-2d13b5d46e53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"8106ffa5-f936-4ac8-b67d-2d13b5d46e53"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

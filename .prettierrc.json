@@ -4,5 +4,6 @@
 	"arrowParens": "avoid",
 	"trailingComma": "none",
 	"tabWidth": 4,
-	"useTabs": true
+	"useTabs": true,
+	"printWidth": 80
 }

@@ -21,9 +21,10 @@ const handler = (err, req, res, next) => {
 		delete response.stack;
 	}
 
-	res.locals.errorMessage = response.message;
+	res.locals.message = response.message;
+	res.locals.error = config.env === "development" ? err : {};
 
-	logger.error(err);
+	// logger.error(err);
 	res.status(response.status).json(response);
 };
 
