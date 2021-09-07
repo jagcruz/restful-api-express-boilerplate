@@ -1,0 +1,16 @@
+{
+	"ignore": [
+		".git",
+		".husky",
+		"node_modules",
+		"docs",
+		"./package-lock.json",
+		"tests"
+	],
+	"verbose": false,
+	"watch": ["./src/", "./package.json", "./.env"],
+	"env": {
+		"NODE_ENV": "development"
+	},
+	"ext": "js,json,pug"
+}
